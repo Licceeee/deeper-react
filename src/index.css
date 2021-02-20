@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.router-link {
+    text-decoration: none;
+}
+
+.btn-action {
+    color: #fff;
+    background-color: #7C0000;
+    border-color: #7C0000;
+}
+
+.btn-action:hover {
+    color: #fff;
+    background-color: #4F0000;
+    border-color: #360303;
+}
+
+.btn-check:focus+.btn-action,
+.btn-action:focus {
+    color: #fff;
+    background-color: #4F0000;
+    border-color: #360303;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-check:checked+.btn-action,
+.btn-check:active+.btn-action,
+.btn-action:active,
+.btn-action.active,
+.show>.btn-action.dropdown-toggle {
+    color: #fff;
+    background-color: #360303;
+    border-color: #360303;
+}
+
+.btn-check:checked+.btn-action:focus,
+.btn-check:active+.btn-action:focus,
+.btn-action:active:focus,
+.btn-action.active:focus,
+.show>.btn-action.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-action:disabled,
+.btn-action.disabled {
+    color: #fff;
+    background-color: #7C0000;
+    border-color: #7C0000;
+}
+
+h1 {
+    font-family: 'Anurati regular';
+    src: local('Anurati'), url(./fonts/Anurati-Regular.otf) format('otf');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+}
+
+a {
+    color: rgba(48, 52, 58, 0.5);
+}
