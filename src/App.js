@@ -5,6 +5,7 @@ import Categories from './components/Categories';
 import Card from './components/Card';
 import { useQuery } from '@apollo/client';
 import { CATEGORIES } from './Api';
+import Spinner from './components/Spinner';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
     setQuestions(questionSet);
   }
 
+
   return (
     <div className="App">
         <div className="App-header">
@@ -25,20 +27,23 @@ const App = () => {
           </h1>
         </div>
 
+        <div className="container">
+          <Switch>
 
-        <Switch>
+            <Route exact path="/">
+              <div className="text-center">
+                {loading && <Spinner />}
+                {error && <p>Error :(</p>}
+              </div>
 
-          <Route exact path="/">
-            {loading && <p>Loading...</p>}
-            {error && <p>Error :(</p>}
-            {data && <Categories {...data} handleSelection={handleSelection} />}
-          </Route>
+              {data && <Categories {...data} handleSelection={handleSelection} />}
+            </Route>
 
-          <Route path="/question">
-            <Card questions={questions} />
-          </Route>
-        </Switch>
-
+            <Route path="/question">
+              <Card questions={questions} />
+            </Route>
+          </Switch>
+        </div>
     </div>
   );
 }

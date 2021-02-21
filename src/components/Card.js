@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import './Card.css';
+import './css/Card.css';
+import Button from './Button';
 
 
 const Card = ({ questions }) => {
@@ -26,12 +27,12 @@ const Card = ({ questions }) => {
             <div className="row">
                 <div className="col-6">
                     <Link to='/'>
-                        <button className="btn btn-dark m-5">Home</button>
+                        <Button text="Home" cssClass="dark"/>
                     </Link>
                     
                 </div>
                 <div className="col-6">
-                    <button className="btn btn-action m-5" onClick={setNextQuestion}> NEXT</button>
+                    <Button text="NEXT" cssClass="yellow"  action={setNextQuestion} />
                 </div>
             </div>
             

@@ -14,13 +14,13 @@ const client = new ApolloClient({
 const CATEGORIES = gql`
     query {
         categories {
-        id
-        name
-        description
-        questionSet {
             id
-            content
-        } 
+            name
+            description
+            questionSet {
+                id
+                content
+            } 
         }
     }
 `;
