@@ -20,7 +20,7 @@ const Category = ({ name, description, questionSet, handleSelection }) => {
                             <div className="border">
                                 <div className="profile-overview">
                                     <p>Questions</p>
-                                    <h6>{questionSet.length}</h6>
+                                    <h6 className="number">{questionSet.length}</h6>
                                 </div>
                             </div>
                             <Link to='/question' className="router-link" onClick={() => handleSelection(name, questionSet)}>

@@ -79,3 +79,11 @@ h6 {
 .profile-card-4 .start-button:hover {
     background-color: #4f586b;
 }
+
+.number {
+    color: white;
+}
+
+.profile-card-4:hover .number {
+    color: #4f586b;
+}
