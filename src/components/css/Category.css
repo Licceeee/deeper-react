@@ -38,7 +38,8 @@
     color: #777;
 }
 
-.profile-card-4 .profile-overview h4 {
+.profile-card-4 .profile-overview h3,
+h6 {
     color: #fff;
     font-weight: bold;
 }
