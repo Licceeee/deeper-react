@@ -13,12 +13,33 @@ code {
     text-decoration: none;
 }
 
-h1 {
+
+/* h1 {
     font-family: 'Anurati regular';
     src: local('Anurati'), url(./fonts/Anurati-Regular.otf) format('otf');
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-transform: uppercase;
+} */
+
+h1 {
+    font-family: 'Sen Regular';
+    src: local('Sen Regular'), url(./fonts/Sen-Regular.ttf) format('ttf');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+h2,
+h3,
+p {
+    font-family: 'Akaya Kanadaka';
+    src: local('Akaya Kanadakals'), url(./fonts/AkayaTelivigala-Regular.ttf) format('ttf');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+    margin: 0
 }
 
 a {

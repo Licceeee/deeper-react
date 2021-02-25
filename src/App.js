@@ -13,19 +13,33 @@ const App = () => {
 
   const { loading, error, data } = useQuery(CATEGORIES);
   const [questions, setQuestions] = useState();
+  const [category, setCategory] = useState();
 
-  const handleSelection = (questionSet) => {
+  const handleSelection = (name, questionSet) => {
     setQuestions(questionSet);
+    setCategory(name);
   }
 
 
   return (
     <div className="App">
-        <div className="App-header">
+
+
+        <div class="shape">
+
+          <div className="mydiv">
+            <span><hr className="myHr"/></span>
+              <h1 className="m-4"> DEEPER </h1>
+              <span><hr className="myHr"/></span>
+        </div>
+             
+    
+        </div>
+        {/* <div className="App-header">
           <h1>
               DEEPER
           </h1>
-        </div>
+        </div> */}
 
         <div className="container">
           <Switch>
@@ -40,7 +54,7 @@ const App = () => {
             </Route>
 
             <Route path="/question">
-              <Card questions={questions} />
+              <Card questions={questions} category={category}/>
             </Route>
           </Switch>
         </div>

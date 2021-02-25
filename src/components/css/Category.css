@@ -6,6 +6,14 @@
     position: relative;
     margin: 10px auto;
     cursor: pointer;
+    transition: transform .2s;
+    border: white 1px solid;
+    /* min-height: 300px; */
+}
+
+.profile-card-4:hover {
+    transform: scale(1.2);
+    margin: 3%;
 }
 
 .profile-card-4 .profile-content {
@@ -21,7 +29,7 @@
 }
 
 .profile-card-4 .profile-overview {
-    padding: 15px 0px;
+    padding: 1vh;
 }
 
 .profile-card-4 .profile-overview p {
@@ -31,7 +39,7 @@
 }
 
 .profile-card-4 .profile-overview h4 {
-    color: #f5f9cb;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -41,6 +49,32 @@
     background-color: #fff;
 }
 
-.profile-card-4:hover h4 {
+.profile-card-4:hover h3,
+h6 {
     color: #1C2437;
+}
+
+.icons {
+    padding: 40px;
+    transform: scale(1.5);
+}
+
+.profile-card-4:hover .icons {
+    color: #D37861;
+}
+
+.start-button {
+    visibility: hidden;
+}
+
+.profile-card-4:hover .start-button {
+    color: white;
+    background-color: #151B29;
+    visibility: visible;
+    border-radius: 16% 84% 13% 87% / 80% 16% 84% 20%;
+    margin: 10px;
+}
+
+.profile-card-4 .start-button:hover {
+    background-color: #4f586b;
 }
