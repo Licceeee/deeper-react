@@ -4,6 +4,8 @@ import Category from './Category';
 
 const Categories = ({ categories, handleSelection }) => {
 
+    categories && categories.map((category) => console.log(category))
+
     return (
         
             <div className="row col-12">

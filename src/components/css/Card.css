@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.icons {
+.card-icons {
     padding: 30px;
     transform: scale(1.5);
     color: #D37861;
@@ -19,7 +19,7 @@
     color: #1C2437;
     border-radius: 5px;
     border: 5px solid #151B29;
-    outline: 1px solid rgb(255, 255, 255);
+    outline: 0.1px solid rgb(255, 255, 255);
 }
 
 .home-button {

@@ -17,6 +17,7 @@ const CATEGORIES = gql`
             id
             name
             description
+            iconWeb
             questionSet {
                 id
                 content

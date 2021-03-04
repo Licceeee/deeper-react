@@ -2,11 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './css/Category.css';
 
-const Category = ({ name, description, questionSet, handleSelection }) => {
+const Category = ({ name, description, iconWeb, questionSet, handleSelection }) => {
 
     return (
-
-
 
      <div className="col-12 col-sm-6 col-md-4 col-lg-3 router-link">
                 <div className="profile-card-4 text-center">
@@ -15,7 +13,7 @@ const Category = ({ name, description, questionSet, handleSelection }) => {
                         <h3>{name}</h3>
                         <div className="profile-description">{description}</div>
           
-                            <i class="fas fa-heart icons"></i>
+                            <i class={`${iconWeb} icons`}></i>
 
                             <div className="border">
                                 <div className="profile-overview">

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './css/Card.css';
-import Button from './Button';
 
 
 const Card = ({ questions, category }) => {
@@ -18,13 +17,11 @@ const Card = ({ questions, category }) => {
         setQuestion(questions[random()]);
     }
 
-    questions && console.log(questions)
-
     return (
         <div className="custom-card">
 
             <h2 className="mt-5">{category}</h2>
-            <i class="fas fa-heart icons"></i>
+            <i class="fas fa-heart card-icons"></i>
 
             <div className="card-border rounded d-flex flex-lg-column justify-content-center">
                 <p className="p-5 question">{question && question.content}</p>

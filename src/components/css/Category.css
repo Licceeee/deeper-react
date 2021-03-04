@@ -58,6 +58,7 @@ h6 {
 .icons {
     padding: 40px;
     transform: scale(1.5);
+    color: #fff;
 }
 
 .profile-card-4:hover .icons {

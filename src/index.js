@@ -5,16 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloProvider } from '@apollo/react-hooks';
 import { client } from './Api';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router>
     <React.StrictMode>
       <ApolloProvider client={client}>
         <App />
       </ApolloProvider>
     </React.StrictMode>
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root')
 );
 
