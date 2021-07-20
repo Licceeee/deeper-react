@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./css/Category.css";
 
+
 const Category = ({
   name,
   description,

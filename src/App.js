@@ -30,11 +30,7 @@ const App = () => {
           </span>
         </div>
       </div>
-      {/* <div className="App-header">
-          <h1>
-              DEEPER
-          </h1>
-        </div> */}
+
 
       <div className="container">
         <Switch>
