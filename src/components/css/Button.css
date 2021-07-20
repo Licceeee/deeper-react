@@ -1,89 +1,28 @@
-.btn-action {
-    color: #fff;
-    background-color: #7C0000;
-    border-color: #7C0000;
+@import "../../utils/colors.css";
+
+.home-button {
+    color: white;
+    background-color: var(--primary);
+    border-radius: 12px;
+    margin: 10px;
+    min-width: 100%;
+    border: 0.5px solid var(--white);
 }
 
-.btn-action:hover {
-    color: #fff;
-    background-color: #4F0000;
-    border-color: #360303;
+.home-button:hover {
+    background-color: #4f586b;
+    color: white;
 }
 
-.btn-check:focus+.btn-action,
-.btn-action:focus {
-    color: #fff;
-    background-color: #4F0000;
-    border-color: #360303;
-    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+.next-button {
+    color: white;
+    background-color: var(--secondary);
+    border-radius: 12px;
+    margin: 10px;
+    min-width: 100%;
 }
 
-.btn-check:checked+.btn-action,
-.btn-check:active+.btn-action,
-.btn-action:active,
-.btn-action.active,
-.show>.btn-action.dropdown-toggle {
-    color: #fff;
-    background-color: #360303;
-    border-color: #360303;
-}
-
-.btn-check:checked+.btn-action:focus,
-.btn-check:active+.btn-action:focus,
-.btn-action:active:focus,
-.btn-action.active:focus,
-.show>.btn-action.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
-}
-
-.btn-action:disabled,
-.btn-action.disabled {
-    color: #fff;
-    background-color: #7C0000;
-    border-color: #7C0000;
-}
-
-.btn-yellow {
-    color: #212529;
-    background-color: #f5f9cb;
-    border-color: #f5f9cb;
-}
-
-.btn-yellow:hover {
-    color: #212529;
-    background-color: #a2a585;
-    border-color: #a2a585;
-}
-
-.btn-check:focus+.btn-yellow,
-.btn-yellow:focus {
-    color: #212529;
-    background-color: #a2a585;
-    border-color: #696b54;
-    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
-}
-
-.btn-check:checked+.btn-yellow,
-.btn-check:active+.btn-yellow,
-.btn-yellow:active,
-.btn-yellow.active,
-.show>.btn-yellow.dropdown-toggle {
-    color: #212529;
-    background-color: #696b54;
-    border-color: #696b54;
-}
-
-.btn-check:checked+.btn-yellow:focus,
-.btn-check:active+.btn-yellow:focus,
-.btn-yellow:active:focus,
-.btn-yellow.active:focus,
-.show>.btn-yellow.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
-}
-
-.btn-yellow:disabled,
-.btn-yellow.disabled {
-    color: #212529;
-    background-color: #f5f9cb;
-    border-color: #f5f9cb;
+.next-button:hover {
+    background-color: var(--red);
+    color: white;
 }

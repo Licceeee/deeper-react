@@ -1,7 +1,9 @@
+@import "../../utils/colors.css";
+
 .spinner {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--white);
 }

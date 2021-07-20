@@ -1,3 +1,5 @@
+@import "../../utils/colors.css";
+
 .custom-card {
     min-height: 20vh;
     display: flex;
@@ -11,43 +13,17 @@
 .card-icons {
     padding: 30px;
     transform: scale(1.5);
-    color: #D37861;
+    color: var(--secondary)
 }
 
 .card-border {
     background-color: white;
-    color: #1C2437;
+    color: var(--primaryLight);
     border-radius: 5px;
-    border: 5px solid #151B29;
+    border: 5px solid var(--primary);
     outline: 0.1px solid rgb(255, 255, 255);
 }
 
-.home-button {
-    color: white;
-    background-color: #151B29;
-    border-radius: 12px;
-    margin: 10px;
-    min-width: 100%;
-    border: 0.5px solid white;
-}
-
-.home-button:hover {
-    background-color: #4f586b;
-    color: white;
-}
-
-.next-button {
-    color: white;
-    background-color: #D37861;
-    border-radius: 12px;
-    margin: 10px;
-    min-width: 100%;
-}
-
-.next-button:hover {
-    background-color: #a33b21;
-    color: white;
-}
 
 .question {
     font-weight: bolder;
