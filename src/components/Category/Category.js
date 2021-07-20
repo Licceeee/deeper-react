@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Category.css";
 
-
 const Category = ({
+  id,
   name,
   description,
   iconWeb,
@@ -25,12 +25,8 @@ const Category = ({
               <h6 className="number">{questionSet.length}</h6>
             </div>
           </div>
-          <Link
-            to="/question"
-            className="router-link"
-            onClick={() => handleSelection(name, questionSet)}
-          >
-            <button className="btn start-button">Start</button>
+          <Link to={`/question/${id}`}>
+            <button className="btn start-button router-link">Start</button>
           </Link>
         </div>
       </div>

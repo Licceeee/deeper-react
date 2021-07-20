@@ -26,13 +26,13 @@ const CATEGORIES = gql`
 `;
 
 const CATEGORY = gql`
-  query GetCat($id: Int!) {
+  query GetCategory($id: Int!) {
     categoryById(id: $id) {
       name
       description
-      iconMobile
-      iconPackageNameMobile
+      iconWeb
       questionSet {
+        id
         content
       }
     }

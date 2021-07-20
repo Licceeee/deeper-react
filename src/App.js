@@ -1,21 +1,14 @@
-import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Categories from "./components/Categories/Categories";
 import Card from "./components/Card/Card";
 import { useQuery } from "@apollo/client";
 import { CATEGORIES } from "./utils/api";
 import Spinner from "./components/Spinner/Spinner";
+import "./App.css";
 
 const App = () => {
   const { loading, error, data } = useQuery(CATEGORIES);
-  const [questions, setQuestions] = useState();
-  const [category, setCategory] = useState();
-
-  const handleSelection = (name, questionSet) => {
-    setQuestions(questionSet);
-    setCategory(name);
-  };
 
   return (
     <div className="App">
@@ -31,7 +24,6 @@ const App = () => {
         </div>
       </div>
 
-
       <div className="container">
         <Switch>
           <Route exact path="/">
@@ -40,11 +32,11 @@ const App = () => {
               {error && <p>Error: {error.message}</p>}
             </div>
 
-            {data && <Categories {...data} handleSelection={handleSelection} />}
+            {data && <Categories {...data} />}
           </Route>
 
-          <Route path="/question">
-            <Card questions={questions} category={category} />
+          <Route exact path="/question/:id">
+            <Card />
           </Route>
         </Switch>
       </div>

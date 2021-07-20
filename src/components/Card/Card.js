@@ -1,50 +1,78 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Card.css";
 import Button from "../Button/Button";
+import { useQuery } from "@apollo/client";
+import { CATEGORY } from "../../utils/api";
 
-const Card = ({ questions, category }) => {
-  const [question, setQuestion] = useState();
+const Card = () => {
+  const { id } = useParams();
+  const { data, error, loading } = useQuery(CATEGORY, { variables: { id } });
+  const [myData, setMyData] = useState();
+  const [question, setQuestion] = useState(null);
 
   useEffect(() => {
-    questions && setQuestion(questions[0]);
-  }, []);
+    data && setMyData(data.categoryById);
+    data && setQuestion(data.categoryById.questionSet[0]);
+  }, [data]);
 
   const random = () => {
-    return Math.floor(Math.random() * questions.length);
+    return Math.floor(Math.random() * myData.questionSet.length);
   };
 
   const setNextQuestion = () => {
-    setQuestion(questions[random()]);
+    let newQuestion = myData.questionSet[random()]
+    while (question.id === newQuestion.id) {
+      newQuestion = myData.questionSet[random()]
+    } 
+    setQuestion(newQuestion);
   };
 
-  return (
-    <div className="custom-card">
-      <h2 className="mt-5">{category}</h2>
-      <i className="fas fa-heart card-icons"></i>
+  if (loading) {
+    return <div>LOADING</div>;
+  }
 
-      <div className="card-border rounded d-flex flex-lg-column justify-content-center">
-        <p className="p-5 question">{question && question.content}</p>
-      </div>
+  if (error) {
+    return (
+      <Fragment>
+        <div>ERROR {error.message}</div>
+        <Link to="/">
+          <Button text="Home" cssClass="btn home-button my-5" />
+        </Link>
+      </Fragment>
+    );
+  }
 
-      <div className="row col-12 d-flex justify-content-center p-0 m-0">
-        <div className="col-3">
-          <Link to="/">
-            <Button text="Home" cssClass="btn home-button my-5" />
-          </Link>
+  if (data) {
+    return (
+      <div className="custom-card">
+        <h2 className="mt-5">{data.categoryById.name}</h2>
+        <i className="fas fa-heart card-icons"></i>
+
+        <div className="card-border rounded d-flex flex-lg-column justify-content-center">
+          <p className="p-5 question">{question && question.content}</p>
         </div>
-        <div className="col-3">
-          <Button
-            text="Next"
-            cssClass="btn next-button my-5 block"
-            action={setNextQuestion}
-          />
-        </div>
-      </div>
 
-      <hr />
-    </div>
-  );
+        <div className="row col-12 d-flex justify-content-center p-0 m-0">
+          <div className="col-3">
+            <Link to="/">
+              <Button text="Home" cssClass="btn home-button my-5" />
+            </Link>
+          </div>
+          <div className="col-3">
+            <Button
+              text="Next"
+              cssClass="btn next-button my-5 block"
+              action={setNextQuestion}
+            />
+          </div>
+        </div>
+
+        <hr />
+      </div>
+    );
+  }
 };
 
 export default Card;

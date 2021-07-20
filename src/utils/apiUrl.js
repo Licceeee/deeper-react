@@ -9,6 +9,4 @@ if (NODE_ENV === "production") {
   apiUrl = REACT_APP_LOCAL_SERVER_URL;
 }
 
-console.log(apiUrl)
-
 export default apiUrl;
