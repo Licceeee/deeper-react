@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./css/Category.css";
+import "./Category.css";
 
 
 const Category = ({

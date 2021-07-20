@@ -25,4 +25,18 @@ const CATEGORIES = gql`
   }
 `;
 
-export { client, CATEGORIES };
+const CATEGORY = gql`
+  query GetCat($id: Int!) {
+    categoryById(id: $id) {
+      name
+      description
+      iconMobile
+      iconPackageNameMobile
+      questionSet {
+        content
+      }
+    }
+  }
+`;
+
+export { client, CATEGORIES, CATEGORY };

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./css/Card.css";
-import Button from "./Button";
+import "./Card.css";
+import Button from "../Button/Button";
 
 const Card = ({ questions, category }) => {
   const [question, setQuestion] = useState();

@@ -1,11 +1,11 @@
 import "./App.css";
 import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import Categories from "./components/Categories";
-import Card from "./components/Card";
+import Categories from "./components/Categories/Categories";
+import Card from "./components/Card/Card";
 import { useQuery } from "@apollo/client";
 import { CATEGORIES } from "./utils/api";
-import Spinner from "./components/Spinner";
+import Spinner from "./components/Spinner/Spinner";
 
 const App = () => {
   const { loading, error, data } = useQuery(CATEGORIES);
