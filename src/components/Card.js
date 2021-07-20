@@ -21,7 +21,7 @@ const Card = ({ questions, category }) => {
         <div className="custom-card">
 
             <h2 className="mt-5">{category}</h2>
-            <i class="fas fa-heart card-icons"></i>
+            <i className="fas fa-heart card-icons"></i>
 
             <div className="card-border rounded d-flex flex-lg-column justify-content-center">
                 <p className="p-5 question">{question && question.content}</p>
@@ -37,7 +37,7 @@ const Card = ({ questions, category }) => {
                     </div>
                     <div className="col-3">
                         <button className="btn next-button my-5 block" onClick={setNextQuestion}>Next</button>
-                        {/* <Button text="NEXT" cssClass="yellow"  action={setNextQuestion} /> */}
+                        {/* <Button text="NEXT" cssclassName="yellow"  action={setNextQuestion} /> */}
                     </div>
                 </div>
             

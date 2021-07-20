@@ -1,90 +1,96 @@
 .profile-card-4 {
-    max-width: 300px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative;
-    margin: 10px auto;
-    cursor: pointer;
-    transition: transform .2s;
-    border: white 1px solid;
-    /* min-height: 300px; */
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: white 1px solid;
+  height: 300px;
 }
 
 .profile-card-4:hover {
-    transform: scale(1.2);
-    margin: 3%;
+  transform: scale(1.1);
+  margin: 2%;
 }
 
-.profile-card-4 .profile-content {
-    position: relative;
-    padding: 15px;
-    background-color: #1C2437;
+.profile-content {
+  padding: 15px;
+  background-color: #1c2437;
+  width: 100%;
+  height: 100%;
 }
 
-.profile-card-4 .profile-description {
-    color: #777;
-    font-size: 12px;
-    padding: 10px;
+.category-title {
+    height: 25%;
+}
+
+.profile-description {
+  color: #777;
+  font-size: 12px;
+  padding: 10px;
+  height: 15%;
 }
 
 .profile-card-4 .profile-overview {
-    padding: 1vh;
+  padding: 1vh;
 }
 
 .profile-card-4 .profile-overview p {
-    font-size: 10px;
-    font-weight: 600;
-    color: #777;
+  font-size: 10px;
+  font-weight: 600;
+  color: #777;
 }
 
 .profile-card-4 .profile-overview h3,
 h6 {
-    color: #fff;
-    font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
 
 .profile-card-4 .profile-content:hover {
-    /* transform: rotate(5deg) scale(1.1, 1.1);
+  /* transform: rotate(5deg) scale(1.1, 1.1);
     filter: brightness(110%); */
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .profile-card-4:hover h3,
 h6 {
-    color: #1C2437;
+  color: #1c2437;
 }
 
 .icons {
-    padding: 40px;
-    transform: scale(1.5);
-    color: #fff;
+  padding: 10%;
+  transform: scale(1.5);
+  color: #fff;
 }
 
 .profile-card-4:hover .icons {
-    color: #D37861;
+  color: #d37861;
 }
 
 .start-button {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .profile-card-4:hover .start-button {
-    color: white;
-    background-color: #151B29;
-    visibility: visible;
-    border-radius: 16% 84% 13% 87% / 80% 16% 84% 20%;
-    margin: 10px;
+  color: white;
+  background-color: #151b29;
+  visibility: visible;
+  border-radius: 16% 84% 13% 87% / 80% 16% 84% 20%;
+  margin: 10px;
 }
 
 .profile-card-4 .start-button:hover {
-    background-color: #4f586b;
+  background-color: #4f586b;
 }
 
 .number {
-    color: white;
+  color: white;
 }
 
 .profile-card-4:hover .number {
-    color: #4f586b;
+  color: #4f586b;
 }
