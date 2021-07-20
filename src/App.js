@@ -41,7 +41,7 @@ const App = () => {
           <Route exact path="/">
             <div className="text-center">
               {loading && <Spinner />}
-              {error && <p>Error :( {error.message}</p>}
+              {error && <p>Error: {error.message}</p>}
             </div>
 
             {data && <Categories {...data} handleSelection={handleSelection} />}
