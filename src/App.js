@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Categories from "./components/Categories";
 import Card from "./components/Card";
 import { useQuery } from "@apollo/client";
-import { CATEGORIES } from "./Api";
+import { CATEGORIES } from "./utils/api";
 import Spinner from "./components/Spinner";
 
 const App = () => {

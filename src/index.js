@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloProvider } from '@apollo/react-hooks';
-import { client } from './Api';
+import { client } from './utils/api';
 import { HashRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
