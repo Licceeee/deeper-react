@@ -30,6 +30,7 @@
 
 .category-title {
   height: 25%;
+  /* font-family: "Sen Extra-bold"; */
 }
 
 .profile-description {
@@ -49,11 +50,11 @@
   color: var(--grey);
 }
 
-.profile-overview h3,
+/* .profile-overview h3,
 h6 {
   color: var(--white);
   font-weight: bold;
-}
+} */
 
 /* This is being used */
 .icons {

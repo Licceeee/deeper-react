@@ -18,34 +18,56 @@ code {
   text-decoration: none;
 }
 
-/* h1 {
-    font-family: 'Anurati regular';
-    src: local('Anurati'), url(./fonts/Anurati-Regular.otf) format('otf');
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-transform: uppercase;
-} */
 
 h1 {
-  font-family: "Sen Regular";
-  src: local("Sen Regular"), url(./fonts/Sen-Regular.ttf) format("ttf");
+  font-family: 'Sen', sans-serif;
+  src: local("Sen ExtraBold"), url(./fonts/Sen/Sen-ExtraBold.ttf) format("ttf");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
   font-size: 3.5em;
+  font-weight: 800;
 }
 
-h2,
-h3,
+
+h2 {
+  font-family: 'Sen', sans-serif;
+  src: local("Sen Bold"), url(./fonts/Sen/Sen-Bold.ttf) format("ttf");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  margin: 0;
+  /* font-weight: 800; */
+}
+
+h3 {
+
+  font-family: 'Sen', sans-serif;
+  src: local("Sen ExtraBold"), url(./fonts/Sen/Sen-ExtraBold.ttf) format("ttf");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 800;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Sen Regular";
+  src: local("Sen Regular"), url(./fonts/Sen/Sen-Regular.ttf) format("ttf");
+}
+
 p {
-  font-family: "Akaya Kanadaka";
-  src: local("Akaya Kanadakals"),
-    url(./fonts/AkayaTelivigala-Regular.ttf) format("ttf");
+  font-family: 'Sen', sans-serif;
+  src: local("Sen Regular"), url(./fonts/Sen/Sen-Regular.ttf) format("ttf");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
   margin: 0;
 }
+
+
 
 a {
   color: var(--white);

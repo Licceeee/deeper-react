@@ -1,11 +1,15 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Categories from "./components/Categories/Categories";
-import Card from "./components/Card/Card";
+
 import { useQuery } from "@apollo/client";
 import { CATEGORIES } from "./utils/api";
-import Spinner from "./components/Spinner/Spinner";
+
 import "./App.css";
+
+import Categories from "./components/Categories/Categories";
+import Card from "./components/Card/Card";
+import Spinner from "./components/Spinner/Spinner";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const { loading, error, data } = useQuery(CATEGORIES);
@@ -39,7 +43,9 @@ const App = () => {
             <Card />
           </Route>
         </Switch>
+   
       </div>
+      <Footer />
     </div>
   );
 };
