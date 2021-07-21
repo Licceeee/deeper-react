@@ -1,33 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Category.css";
+import Button from "../Button/Button";
 
-const Category = ({
-  id,
-  name,
-  description,
-  iconWeb,
-  questionSet,
-}) => {
+const Category = ({ id, name, description, iconWeb, questionSet }) => {
   return (
-      <div className="profile-card-4 text-center">
-        <div className="profile-content">
-          <h3 className="category-title">{name}</h3>
-          <div className="profile-description">{description}</div>
+    <div className="category-card text-center">
+      <div className="profile-content">
+        <h3 className="category-title">{name}</h3>
+        <div className="profile-description">{description}</div>
 
-          <i className={`${iconWeb} icons`}></i>
+        <i className={`${iconWeb} icons`}></i>
 
-          <div className="border">
-            <div className="profile-overview">
-              <p>Questions</p>
-              <h6 className="number">{questionSet.length}</h6>
-            </div>
+        <div className="border">
+          <div className="profile-overview">
+            <p>Questions</p>
+            <h6 className="number">{questionSet.length}</h6>
           </div>
-          <Link to={`/question/${id}`}>
-            <button className="btn start-button router-link">Start</button>
-          </Link>
         </div>
+        <Link to={`/question/${id}`}>
+          <Button text="Start" cssClass="btn home-button start-button" />
+        </Link>
       </div>
+    </div>
   );
 };
 

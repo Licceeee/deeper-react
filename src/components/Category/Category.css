@@ -1,6 +1,6 @@
 @import "../../utils/colors.css";
 
-.profile-card-4 {
+.category-card {
   width: 300px;
   height: 300px;
   border-radius: 5px;
@@ -14,9 +14,9 @@
   margin: 10px auto;
 }
 
-.profile-card-4:hover {
+/* .category-card:hover {
   height: 310px;
-}
+} */
 
 .profile-content {
   padding: 15px;
@@ -66,32 +66,29 @@ h6 {
   border: 1px solid #dee2e6 !important;
 }
 
-.profile-card-4:hover .icons {
+.category-card:hover .icons {
   color: var(--secondary);
 }
 
 .start-button {
   visibility: hidden;
 }
-.profile-card-4:hover .start-button {
-  color: white;
-  background-color: var(--primary);
+.category-card:hover .start-button {
   visibility: visible;
-  border-radius: 16% 84% 13% 87% / 80% 16% 84% 20%;
-  margin: 10px;
+
 }
-.profile-card-4 .start-button:hover {
+.category-card .start-button:hover {
   background-color: #4f586b;
 }
 
 .number {
   color: white;
 }
-.profile-card-4:hover .number {
+.category-card:hover .number {
   color: #4f586b;
 }
 
-.profile-card-4:hover h3,
+.category-card:hover h3,
 h6 {
   color: var(--primaryLight);
 }
