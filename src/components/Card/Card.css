@@ -10,12 +10,6 @@
     text-align: center;
 }
 
-.card-icons {
-    padding: 30px;
-    transform: scale(1.5);
-    color: var(--secondary)
-}
-
 .card-border {
     background-color: white;
     color: var(--primaryLight);
@@ -24,6 +18,12 @@
     outline: 0.1px solid rgb(255, 255, 255);
 }
 
+
+.card-icons {
+    padding: 30px;
+    transform: scale(1.5);
+    color: var(--secondary)
+}
 
 .question {
     font-weight: bolder;

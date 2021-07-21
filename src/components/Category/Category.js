@@ -8,10 +8,8 @@ const Category = ({
   description,
   iconWeb,
   questionSet,
-  handleSelection,
 }) => {
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3 router-link">
       <div className="profile-card-4 text-center">
         <div className="profile-content">
           <h3 className="category-title">{name}</h3>
@@ -30,7 +28,6 @@ const Category = ({
           </Link>
         </div>
       </div>
-    </div>
   );
 };
 
