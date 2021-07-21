@@ -1,35 +1,51 @@
 @import "../../utils/colors.css";
 
 .custom-card {
-    min-height: 20vh;
-    text-align: center;
-    font-size: calc(10px + 2vmin);
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-
- 
+  min-height: 20vh;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
 }
 
 .card-border {
-    background-color: white;
-    color: var(--primaryLight);
-    border-radius: 5px;
-    border: 5px solid var(--primary);
-    outline: 0.1px solid rgb(255, 255, 255);
+  background-color: white;
+  color: var(--primaryLight);
+  border-radius: 5px;
+  border: 5px solid var(--primary);
+  outline: 0.1px solid rgb(255, 255, 255);
 }
 
-
 .card-icons {
-    padding: 30px;
-    transform: scale(1.5);
-    color: var(--secondary)
+  padding: 30px;
+  transform: scale(1.5);
+  color: var(--secondary);
 }
 
 .question {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
+.separator {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .next {
+    order: 1;
+    margin-bottom: 3%;
+  }
+
+  .separator {
+    display: block;
+    order: 2;
+    width: 15vw;
+  }
+  .home {
+    order: 3;
+  }
+}

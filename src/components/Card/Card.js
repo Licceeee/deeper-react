@@ -56,12 +56,15 @@ const Card = () => {
         
         <div className="row col-12 d-flex justify-content-center mt-2">
 
-          <div className="col-12 col-sm-6 col-md-3">
+          <div className="col-12 col-sm-6 col-md-3 home">
             <Link to="/">
               <Button text="Home" cssClass="btn home-button" />
             </Link>
           </div>
-          <div className="col-12 col-sm-6 col-md-3">
+
+          <hr className="separator"/>
+
+          <div className="col-12 col-sm-6 col-md-3 next">
             <Button
               text="Next"
               cssClass="btn next-button block"
