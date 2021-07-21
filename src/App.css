@@ -36,3 +36,7 @@
   color: white;
   border-bottom: 1px solid gray;
 }
+
+.page-title {
+  /* color: var(--primary) */
+}

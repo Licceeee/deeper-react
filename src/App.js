@@ -17,7 +17,7 @@ const App = () => {
           <span>
             <hr className="myHr" />
           </span>
-          <h1 className="m-4"> DEEPER </h1>
+          <h1 className="m-4 page-title"> DEEPER </h1>
           <span>
             <hr className="myHr" />
           </span>
