@@ -4,7 +4,7 @@ import "./Categories.css";
 
 const Categories = ({ categories, handleSelection }) => {
   return (
-    <div className="row col-12">
+    <div className="row col-12 p-0 m-0">
       <div className="my-5">
         <h2 className="text-center">Select a category</h2>
       </div>
