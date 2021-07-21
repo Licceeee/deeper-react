@@ -2,12 +2,16 @@
 
 .custom-card {
     min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
     text-align: center;
+    font-size: calc(10px + 2vmin);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+
+ 
 }
 
 .card-border {
@@ -28,3 +32,4 @@
 .question {
     font-weight: bolder;
 }
+

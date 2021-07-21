@@ -22,10 +22,10 @@ const Card = () => {
   };
 
   const setNextQuestion = () => {
-    let newQuestion = myData.questionSet[random()]
+    let newQuestion = myData.questionSet[random()];
     while (question.id === newQuestion.id) {
-      newQuestion = myData.questionSet[random()]
-    } 
+      newQuestion = myData.questionSet[random()];
+    }
     setQuestion(newQuestion);
   };
 
@@ -53,20 +53,22 @@ const Card = () => {
         <div className="card-border rounded d-flex flex-lg-column justify-content-center">
           <p className="p-5 question">{question && question.content}</p>
         </div>
+        
+        <div className="row col-12 d-flex justify-content-center mt-2">
 
-        <div className="row col-12 d-flex justify-content-center p-0 m-0">
-          <div className="col-3">
+          <div className="col-12 col-sm-6 col-md-3">
             <Link to="/">
-              <Button text="Home" cssClass="btn home-button my-5" />
+              <Button text="Home" cssClass="btn home-button" />
             </Link>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-sm-6 col-md-3">
             <Button
               text="Next"
-              cssClass="btn next-button my-5 block"
+              cssClass="btn next-button block"
               action={setNextQuestion}
             />
           </div>
+          
         </div>
 
         <hr />
