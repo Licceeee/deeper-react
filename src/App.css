@@ -8,28 +8,59 @@
   background-color: var(--primary);
 }
 
+.border-primary {
+  -webkit-box-shadow: inset 0px 0px 0px 3px var(--primary);
+  -moz-box-shadow: inset 0px 0px 0px 3px var(--primary);
+  box-shadow: inset 0px 0px 0px 3px var(--primary);
+}
+
+.border-white {
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  -webkit-box-shadow: inset 0px 0px 0px 1px var(--white);
+  -moz-box-shadow: inset 0px 0px 0px 1px var(--white);
+  box-shadow: inset 0px 1px 0px 1px var(--white);
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .shape {
+  /* background-image: radial-gradient(
+    20% 30vh at 50% -5vh,
+    var(--secondary) 75%,
+    transparent 75%
+  ); */
+
   background-image: radial-gradient(
-    30% 30vh at 50% -5vh,
+    300px 30vh at 50% -5vh,
     var(--secondary) 75%,
     transparent 75%
   );
-  min-height: 20vh;
+
+  height: 20vh;
+
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  contain: content;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-
+/* 
 .mydiv {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
+  justify-content: center;
+} */
 
 .myHr {
   width: 30%;
@@ -37,6 +68,8 @@
   border-bottom: 1px solid gray;
 }
 
+
 .page-title {
-  /* color: var(--primary) */
+  margin-top: 3vh;
+  color: var(--primary)
 }

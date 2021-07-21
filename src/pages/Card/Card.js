@@ -2,7 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Card.css";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 import { useQuery } from "@apollo/client";
 import { CATEGORY } from "../../utils/api";
 
