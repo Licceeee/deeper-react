@@ -53,16 +53,15 @@ const Card = () => {
         <div className="card-border rounded d-flex flex-lg-column justify-content-center">
           <p className="p-5 question">{question && question.content}</p>
         </div>
-        
-        <div className="row col-12 d-flex justify-content-center mt-2">
 
+        <div className="row col-12 d-flex justify-content-center mt-2">
           <div className="col-12 col-sm-6 col-md-3 home">
             <Link to="/">
               <Button text="Home" cssClass="btn home-button" />
             </Link>
           </div>
 
-          <hr className="separator"/>
+          <hr className="separator" />
 
           <div className="col-12 col-sm-6 col-md-3 next">
             <Button
@@ -71,7 +70,6 @@ const Card = () => {
               action={setNextQuestion}
             />
           </div>
-          
         </div>
 
         <hr />
