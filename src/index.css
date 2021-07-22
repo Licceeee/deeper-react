@@ -21,7 +21,7 @@ code {
 
 h1 {
   font-family: 'Sen', sans-serif;
-  src: local("Sen ExtraBold"), url(./fonts/Sen/Sen-ExtraBold.ttf) format("ttf");
+  src: local("Sen ExtraBold"), url(./assets/fonts/Sen/Sen-ExtraBold.ttf) format("ttf");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   font-family: 'Sen', sans-serif;
-  src: local("Sen Bold"), url(./fonts/Sen/Sen-Bold.ttf) format("ttf");
+  src: local("Sen Bold"), url(./assets/fonts/Sen/Sen-Bold.ttf) format("ttf");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
@@ -55,12 +55,12 @@ h4,
 h5,
 h6 {
   font-family: "Sen Regular";
-  src: local("Sen Regular"), url(./fonts/Sen/Sen-Regular.ttf) format("ttf");
+  src: local("Sen Regular"), url(./assets/fonts/Sen/Sen-Regular.ttf) format("ttf");
 }
 
 p {
   font-family: 'Sen', sans-serif;
-  src: local("Sen Regular"), url(./fonts/Sen/Sen-Regular.ttf) format("ttf");
+  src: local("Sen Regular"), url(./assets/fonts/Sen/Sen-Regular.ttf) format("ttf");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;

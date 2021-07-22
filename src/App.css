@@ -12,6 +12,7 @@
   -webkit-box-shadow: inset 0px 0px 0px 3px var(--primary);
   -moz-box-shadow: inset 0px 0px 0px 3px var(--primary);
   box-shadow: inset 0px 0px 0px 3px var(--primary);
+  /* max-height: 99vh; */
 }
 
 .border-white {
@@ -21,55 +22,15 @@
   -webkit-box-shadow: inset 0px 0px 0px 1px var(--white);
   -moz-box-shadow: inset 0px 0px 0px 1px var(--white);
   box-shadow: inset 0px 1px 0px 1px var(--white);
+  max-height: 100%;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.shape {
-  /* background-image: radial-gradient(
-    20% 30vh at 50% -5vh,
-    var(--secondary) 75%,
-    transparent 75%
-  ); */
-
-  background-image: radial-gradient(
-    300px 30vh at 50% -5vh,
-    var(--secondary) 75%,
-    transparent 75%
-  );
-
-  height: 20vh;
-
-  top: 0;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  contain: content;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-/* 
-.mydiv {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-} */
-
-.myHr {
-  width: 30%;
-  color: white;
-  border-bottom: 1px solid gray;
-}
-
-
-.page-title {
-  margin-top: 3vh;
-  color: var(--primary)
+.main-container {
+  padding-top: 15vh;
+  margin-left: 0;
+  margin-right: 0;
 }
