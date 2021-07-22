@@ -1,7 +1,7 @@
 @import "../../utils/colors.css";
 
 .main-container {
-  padding-top: 15vh;
+  padding-top: 20vh;
   margin-left: 0;
   margin-right: 0;
 }
@@ -15,7 +15,3 @@
   align-content: center;
 }
 
-
-/* .shape {
-	display: none;
-} */
