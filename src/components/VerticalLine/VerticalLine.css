@@ -1,0 +1,54 @@
+.vertical-line {
+  width: 0%;
+  height: 65%;
+  top: 0;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+  border: 0.5px solid rgb(255, 255, 255);
+}
+
+.circle {
+  position: absolute;
+  /* calculate the center of the page minus the half of own size */
+  /* Firefox */
+  left: -moz-calc(50% - 5px);
+  /* WebKit */
+  left: -webkit-calc(50% - 5px);
+  /* Opera */
+  left: -o-calc(50% - 5px);
+  /* Standard */
+  left: calc(50% - 5px);
+  top: 62%;
+
+  height: 10px;
+  width: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.triangle-base {
+  /* TODO outline triangle */
+  position: absolute;
+  /* calculate the center of the page minus the half of own size */
+  /* Firefox */
+  left: -moz-calc(50% - 8px);
+  /* WebKit */
+  left: -webkit-calc(50% - 8px);
+  /* Opera */
+  left: -o-calc(50% - 8px);
+  /* Standard */
+  left: calc(50% - 8px);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgb(255, 255, 255);
+}
+
+.triangle-top {
+  top: 65%;
+}
+
+.triangle-bottom {
+  top: 65.7%;
+}
