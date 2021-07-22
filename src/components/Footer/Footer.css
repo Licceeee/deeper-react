@@ -5,6 +5,9 @@ footer {
   padding-top: 5vh;
   /* margin-top: 8vh; */
   display: flex;
+  /* bottom: 0;
+  position: absolute; */
+  /* bottom: 0; */
 }
 
 .flex {
