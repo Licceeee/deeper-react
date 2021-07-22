@@ -43,7 +43,7 @@ h2 {
 h3 {
 
   font-family: 'Sen', sans-serif;
-  src: local("Sen ExtraBold"), url(./fonts/Sen/Sen-ExtraBold.ttf) format("ttf");
+  src: local("Sen ExtraBold"), url(./assets/fonts/Sen/Sen-ExtraBold.ttf) format("ttf");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
