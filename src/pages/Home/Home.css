@@ -1,0 +1,39 @@
+.main-container {
+  padding-top: 15vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.first-section {
+  width: 100%;
+}
+
+
+.section-choose-way-to-play {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.img {
+  height: 67%;
+  width: 67%;
+}
+
+.inner-container {
+  text-align: center;
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.text{
+  width: 50%;
+  text-align: start;
+}
+
+@media screen and (max-width: 700px) {
+
+}

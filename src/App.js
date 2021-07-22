@@ -6,10 +6,13 @@ import { CATEGORIES } from "./utils/api";
 
 import "./App.css";
 
+import Home from "./pages/Home/Home";
 import Categories from "./pages/Categories/Categories";
 import Card from "./pages/Card/Card";
 import Spinner from "./components/Spinner/Spinner";
 import Footer from "./components/Footer/Footer";
+import TitleLG from "./components/TitleLG/TitleLG";
+import VerticalLine from "./components/VerticalLine/VerticalLine";
 
 const App = () => {
   const { loading, error, data } = useQuery(CATEGORIES);
@@ -20,12 +23,14 @@ const App = () => {
         <div className="border-white">
           <Switch>
             <Route exact path="/">
-              <div className="shape">
-                  <h1 className="page-title">DEEPER</h1>
-              </div>
-
+              <VerticalLine />
+              <TitleLG />
+              <Home />
+            </Route>
+            <Route exact path="/categories">
+              <TitleLG />
               <div className="container">
-                <div className="text-center">
+                <div className="text-center push-down">
                   {loading && <Spinner />}
                   {error && <p>Error: {error.message}</p>}
                 </div>
