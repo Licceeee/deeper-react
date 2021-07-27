@@ -1,0 +1,30 @@
+.triangle-container {
+  transform: rotate(180deg);
+}
+
+.triangle {
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: var(--triangle-width);
+  height: 17px;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid;
+}
+.triangle,
+.triangle::before {
+  display: block;
+  box-sizing: border-box;
+  border-right: 1px solid transparent;
+}
+.triangle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid transparent;
+  transform: rotate(45deg) skew(10deg, 10deg);
+  /* left: -1px; */
+  bottom: -11px;
+}
