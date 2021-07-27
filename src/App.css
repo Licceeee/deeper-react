@@ -1,4 +1,4 @@
-@import "./utils/colors.css";
+@import "./utils/global.css";
 
 .App {
   color: var(--white);
@@ -33,4 +33,12 @@
   padding-top: 15vh;
   margin-left: 0;
   margin-right: 0;
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: var(--white);
 }
