@@ -11,14 +11,16 @@ const Footer = () => {
             <p>Download die App</p>
           </div>
         </div>
+
         <div className="section border-right col-12 col-md-4">
-        <div className="inner-footer-containerr">
+          <div className="inner-footer-container">
             <p>About us</p>
             <p>Contact us</p>
           </div>
         </div>
-        <div className="section col-12 col-md-4 last">
-        <div className="inner-footer-container">
+
+        <div className="section col-12 col-md-4">
+          <div className="inner-footer-container">
             <p>LinkedIn</p>
             <p>GitHub</p>
           </div>
