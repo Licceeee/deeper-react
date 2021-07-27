@@ -1,0 +1,26 @@
+.shape {
+  background-image: radial-gradient(
+    300px 30vh at 50% -5vh,
+    var(--secondary) 75%,
+    transparent 75%
+  );
+
+  height: 20vh;
+
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 99%;
+  contain: content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page-title {
+  margin-top: 3vh;
+  color: var(--primary);
+}
