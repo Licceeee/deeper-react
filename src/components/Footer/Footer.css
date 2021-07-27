@@ -1,10 +1,10 @@
 footer {
   background-color: var(--primaryLight);
   width: 100%;
-  /* min-height: 20vh; */
   padding-top: 5vh;
   padding-bottom: 5vh;
   display: flex;
+  min-height: 18.5vh;
 }
 
 p {
