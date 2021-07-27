@@ -1,13 +1,16 @@
 import React, { Fragment } from "react";
 import "./VerticalLine.css";
+import Triangle from "../Triangle/Triangle";
 
 const VerticalLine = () => {
   return (
     <Fragment>
-      <div className="vertical-line"></div>
-      <div className="circle"></div>
-      <div className="triangle-base triangle-top"></div>
-      <div className="triangle-base triangle-bottom"></div>
+      <div className="line-container">
+        <div className="vertical-line"></div>
+        <div className="circle"></div>
+        <Triangle cssClass="triangle-base triangle-top" />
+        <Triangle cssClass="triangle-base triangle-bottom" />
+      </div>
     </Fragment>
   );
 };

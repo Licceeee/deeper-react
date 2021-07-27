@@ -1,6 +1,6 @@
 .vertical-line {
   width: 0%;
-  height: 65%;
+  height: 67%;
   top: 0;
   background: rgb(255, 255, 255);
   position: absolute;
@@ -12,43 +12,47 @@
   position: absolute;
   /* calculate the center of the page minus the half of own size */
   /* Firefox */
-  left: -moz-calc(50% - 5px);
+  left: -moz-calc(50% - (var(--circle-size) / 2));
   /* WebKit */
-  left: -webkit-calc(50% - 5px);
+  left: -webkit-calc(50% - (var(--circle-size) / 2));
   /* Opera */
-  left: -o-calc(50% - 5px);
+  left: -o-calc(50% - (var(--circle-size) / 2));
   /* Standard */
-  left: calc(50% - 5px);
-  top: 62%;
+  left: calc(50% - (var(--circle-size) / 2));
+  top: 60%;
 
-  height: 10px;
-  width: 10px;
+  height: var(--circle-size);
+  width: var(--circle-size);
   background-color: var(--white);
   border-radius: 50%;
   display: inline-block;
 }
 
 .triangle-base {
-  /* TODO outline triangle */
   position: absolute;
   /* calculate the center of the page minus the half of own size */
   /* Firefox */
-  left: -moz-calc(50% - 8px);
+  left: -moz-calc(50% - (var(--triangle-width)/2));
   /* WebKit */
-  left: -webkit-calc(50% - 8px);
+  left: -webkit-calc(50% - (var(--triangle-width) / 2));
   /* Opera */
-  left: -o-calc(50% - 8px);
+  left: -o-calc(50% - (var(--triangle-width) / 2));
   /* Standard */
-  left: calc(50% - 8px);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid rgb(255, 255, 255);
+  left: calc(50% - (var(--triangle-width) / 2));
 }
+
 
 .triangle-top {
   top: 65%;
 }
 
 .triangle-bottom {
-  top: 65.7%;
+  top: 66.5%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .line-container {
+    display: none;
+  }
 }
