@@ -14,9 +14,9 @@
   /* Firefox */
   /* left: -moz-calc(50% - (var(--circle-size) / 2)); */
   /* WebKit */
-  left: -webkit-calc(50% - (var(--circle-size) / 2));
+  /* left: -webkit-calc(50% - (var(--circle-size) / 2)); */
   /* Opera */
-  left: -o-calc(50% - (var(--circle-size) / 2));
+  /* left: -o-calc(50% - (var(--circle-size) / 2)); */
   /* Standard */
   left: calc(50% - (var(--circle-size) / 2));
   top: 60%;
@@ -34,9 +34,9 @@
   /* Firefox */
   /* left: -moz-calc(50% - (var(--triangle-width)/2)); */
   /* WebKit */
-  left: -webkit-calc(50% - (var(--triangle-width) / 2));
+  /* left: -webkit-calc(50% - (var(--triangle-width) / 2)); */
   /* Opera */
-  left: -o-calc(50% - (var(--triangle-width) / 2));
+  /* left: -o-calc(50% - (var(--triangle-width) / 2)); */
   /* Standard */
   left: calc(50% - (var(--triangle-width) / 2));
 }
