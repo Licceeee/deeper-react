@@ -16,11 +16,13 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding: 3%;
 }
 
 .img {
-  height: 67%;
-  width: 67%;
+  height: 40vh;
+  width: 40vw;
+  padding-bottom: 0;
 }
 
 .inner-container {
@@ -34,6 +36,17 @@
   text-align: start;
 }
 
-@media screen and (max-width: 700px) {
-
+@media screen and (max-width: 768px) {
+  .inner-container {
+    max-width: 100%;
+  }
+  .first {
+    order: 2;
+  }
+  .second {
+    order: 1;
+  }
+  .section-choose-way-to-play {
+    order: 3;
+  }
 }
