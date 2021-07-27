@@ -9,7 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   align-content: stretch;
-  min-height: 80vh;
+  height: 70vh;
 }
 
 .card-border {

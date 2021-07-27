@@ -47,7 +47,7 @@ const Card = () => {
   if (data) {
     return (
       <div className="custom-card">
-        <h2 className="mt-5">{data.categoryById.name}</h2>
+        <h2>{data.categoryById.name}</h2>
         <i className="fas fa-heart card-icons"></i>
 
         <div className="card-border rounded d-flex flex-lg-column justify-content-center">
