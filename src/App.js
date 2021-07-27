@@ -11,7 +11,9 @@ import Categories from "./pages/Categories/Categories";
 import Card from "./pages/Card/Card";
 import Spinner from "./components/Spinner/Spinner";
 import Footer from "./components/Footer/Footer";
-import TitleLG from "./components/TitleLG/TitleLG";
+import HeaderLG from "./components/HeaderLG/HeaderLG";
+import HeaderSM from "./components/HeaderSM/HeaderSM";
+
 import VerticalLine from "./components/VerticalLine/VerticalLine";
 
 const App = () => {
@@ -24,11 +26,11 @@ const App = () => {
           <Switch>
             <Route exact path="/">
               <VerticalLine />
-              <TitleLG />
+              <HeaderLG />
               <Home />
             </Route>
             <Route exact path="/categories">
-              <TitleLG />
+              <HeaderLG />
               <div className="container">
                 <div className="text-center push-down">
                   {loading && <Spinner />}
@@ -40,6 +42,7 @@ const App = () => {
             </Route>
 
             <Route exact path="/question/:id">
+              <HeaderSM />
               <Card />
             </Route>
           </Switch>
