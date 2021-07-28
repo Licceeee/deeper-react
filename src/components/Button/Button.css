@@ -3,12 +3,13 @@
 .home-button {
     color: white;
     background-color: var(--primary);
-    border-radius: 12px;
+    border-radius: 8px;
     margin-right: 2px;
     margin-top: 5px;
     margin-bottom: 5px;
     min-width: 100%;
     border: 0.5px solid var(--white);
+    text-transform: uppercase;
 }
 
 .home-button:hover {
@@ -17,17 +18,35 @@
 }
 
 .next-button {
-    color: white;
+    color: var(--white);
     background-color: var(--secondary);
-    border-radius: 12px;
+    border-radius: 8px;
     margin-right: 2px;
     margin-top: 5px;
     margin-bottom: 5px;
     min-width: 100%;
     min-width: 100%;
+    text-transform: uppercase;
 }
 
 .next-button:hover {
     background-color: var(--red);
+    color: white;
+}
+
+.light-button {
+    color: white;
+    background-color: #3c485f;
+    border-radius: 8px;
+    margin-right: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-width: 100%;
+    border: 0.5px solid var(--white);
+    text-transform: uppercase;
+}
+
+.light-button:hover {
+    background-color: var(--primaryLight);
     color: white;
 }
