@@ -2,11 +2,10 @@ import React from "react";
 import "./Home.css";
 import image from "../../assets/img/cards-img.svg";
 import arrowDown from "../../assets/img/arrow-down2.svg";
-import arrowUp from "../../assets/img/arrow-up.svg";
 import circleLine from "../../assets/img/circle-line.svg";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
-import Triangle from "../../components/Triangle/Triangle";
+
 
 const Home = () => {
   return (
@@ -46,14 +45,6 @@ const Home = () => {
             <Button text="Select a category" cssClass="btn light-button my-5" />
           </Link>
 
-          
-          <div className="svg-container pb-5">
-                <img
-                  src={arrowUp}
-                  className="arrow"
-                  alt="arrow up"
-                ></img>
-              </div>
         </div>
       </div>
     </div>
