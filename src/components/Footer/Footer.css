@@ -4,7 +4,8 @@ footer {
   padding-top: 5vh;
   padding-bottom: 5vh;
   display: flex;
-  min-height: 18.5vh;
+  min-height: var(--footer-height);
+  margin-top:auto; 
 }
 
 p {
