@@ -9,7 +9,6 @@
   width: 100%;
 }
 
-
 .section-choose-way-to-play {
   display: flex;
   flex-direction: column;
@@ -32,9 +31,13 @@
   max-width: 50%;
 }
 
-.text{
+.text {
   width: 50%;
   text-align: start;
+}
+
+.svg-container {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -44,10 +47,28 @@
   .first {
     order: 2;
   }
+  .svg-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
   .second {
     order: 1;
   }
   .section-choose-way-to-play {
     order: 3;
+    padding: 0;
+  }
+  .arrow {
+    height: 14vh;
+    width: 14vw;
+  }
+  .circle-line {
+    height: 10vh;
+    width: 10vw;
   }
 }
