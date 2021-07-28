@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import image from "../../assets/img/cards-img.svg";
+import arrowDown from "../../assets/img/arrow-down2.svg";
+import arrowUp from "../../assets/img/arrow-up.svg";
+import circleLine from "../../assets/img/circle-line.svg";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
 import Triangle from "../../components/Triangle/Triangle";
@@ -24,16 +27,34 @@ const Home = () => {
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua.
             </p>
+              <div className="svg-container pt-5">
+                <img
+                  src={circleLine}
+                  className="circle-line"
+                  alt="circle line"
+                ></img>
+              </div>
           </div>
         </div>
+
         <div className="section-choose-way-to-play">
+          <div className="svg-container">
+            <img src={arrowDown} className="arrow" alt="arrow down"></img>
+          </div>
+
           <Link to="/categories">
-            <Button text="Select a category" cssClass="btn home-button my-5" />
+            <Button text="Select a category" cssClass="btn light-button my-5" />
           </Link>
+
+          
+          <div className="svg-container pb-5">
+                <img
+                  src={arrowUp}
+                  className="arrow"
+                  alt="arrow up"
+                ></img>
+              </div>
         </div>
-        {/* <div className="section-choose-way-to-play">
-          <Triangle />
-        </div> */}
       </div>
     </div>
   );
