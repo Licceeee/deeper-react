@@ -68,6 +68,8 @@
   .section-choose-way-to-play {
     order: 3;
     padding: 0;
+    padding-bottom: 8%;
+
   }
   .arrow {
     height: 14vh;
