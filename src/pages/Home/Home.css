@@ -47,6 +47,12 @@
   .first {
     order: 2;
   }
+
+  .img {
+    width: 70vw;
+    padding-bottom: 0;
+  }
+
   .svg-container {
     display: flex;
     flex-direction: column;
