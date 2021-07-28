@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="section border-right col-12 col-md-4">
           <div className="inner-footer-container">
             <p>About us</p>
-            <p>Contact us</p>
+            <Link to="/contact" className="custom-link">Contact Us</Link>
           </div>
         </div>
 

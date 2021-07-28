@@ -13,7 +13,7 @@ const Home = () => {
     <Fragment>
       <VerticalLine />
       <HeaderLG />
-      <div className="main-container mx-0">
+      <div className="main-container mx-0 page-size">
         <div className="row col-12 first-section p-0 m-0">
           <div className="col-12 col-xl-6 inner-container p-0 m-0 first">
             <img src={image} className="img" alt="card deck"></img>

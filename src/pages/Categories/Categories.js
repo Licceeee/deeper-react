@@ -12,7 +12,7 @@ const Categories = () => {
   return (
     <Fragment>
       <HeaderLG />
-      <div className="container">
+      <div className="container page-size">
         <div className="text-center push-down">
           {loading && <Spinner />}
           {error && <p>Error: {error.message}</p>}

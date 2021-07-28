@@ -57,3 +57,8 @@
   }
 }
 /*# sourceMappingURL=App.css.map */
+
+
+.page-size {
+  min-height: var(--page-height);
+}

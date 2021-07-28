@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <Fragment>
       <HeaderSM />
+      <div className="page-size"></div>
     </Fragment>
   );
 };
