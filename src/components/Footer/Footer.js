@@ -8,22 +8,44 @@ const Footer = () => {
       <div className="container flex col-12">
         <div className="section border-right col-12 col-md-4">
           <div className="inner-footer-container">
-            <p>Rules</p>
+            <Link to="/rules" className="custom-link">
+              <p>Rules</p>
+            </Link>
             <p>Download die App</p>
           </div>
         </div>
 
         <div className="section border-right col-12 col-md-4">
           <div className="inner-footer-container">
-            <p>About us</p>
-            <Link to="/contact" className="custom-link">Contact Us</Link>
+            <Link to="/about" className="custom-link">
+              <p>About Us</p>
+            </Link>
+            <Link to="/contact" className="custom-link">
+              <p>Contact Us</p>
+            </Link>
           </div>
         </div>
 
         <div className="section col-12 col-md-4">
           <div className="inner-footer-container">
-            <p>LinkedIn</p>
-            <p>GitHub</p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/alicia-schonefeld/"
+                className="custom-link"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://github.com/Licceeee"
+                className="custom-link"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </p>
           </div>
         </div>
       </div>

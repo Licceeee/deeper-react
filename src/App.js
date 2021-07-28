@@ -6,6 +6,9 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import Categories from "./pages/Categories/Categories";
 import Contact from "./pages/Contact/Contact";
+import Rules from "./pages/Rules/Rules";
+import Impressum from "./pages/Impressum/Impressum";
+import About from "./pages/About/About";
 import Card from "./pages/Card/Card";
 import Footer from "./components/Footer/Footer";
 
@@ -29,6 +32,18 @@ const App = () => {
 
             <Route exact path="/contact">
               <Contact />
+            </Route>
+
+            <Route exact path="/about">
+              <About />
+            </Route>
+
+            <Route exact path="/rules">
+              <Rules />
+            </Route>
+            
+            <Route exact path="/impressum">
+              <Impressum />
             </Route>
           </Switch>
         </div>
