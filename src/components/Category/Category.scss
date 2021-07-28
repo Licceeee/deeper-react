@@ -1,41 +1,36 @@
-@import url(/home/lice/projects/deeper/deeper-react/src/utils/global.css);
+@import "../../utils/global.css";
+
 .category-card {
   width: 300px;
   height: 300px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
   border: white 1px solid;
   background-color: var(--primary);
   margin: 10px auto;
-}
 
-.category-card:hover .profile-content {
-  background-color: var(--white);
-}
-
-.category-card:hover h3,
-.category-card:hover h6 {
-  color: var(--primaryLight);
-}
-
-.category-card:hover .start-button {
-  visibility: visible;
-}
-
-.category-card:hover .icons {
-  color: var(--secondary);
-}
-
-.category-card:hover .number {
-  color: #4f586b;
+  &:hover {
+    .profile-content {
+      background-color: var(--white);
+    }
+    h3,
+    h6 {
+      color: var(--primaryLight);
+    }
+    .start-button {
+      visibility: visible;
+    }
+    .icons {
+      color: var(--secondary);
+    }
+    .number {
+      color: #4f586b;
+    }
+  }
 }
 
 .profile-content {
@@ -51,8 +46,7 @@
 
 .icons {
   padding: 10%;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   color: var(--white);
 }
 
@@ -84,4 +78,3 @@
 .number {
   color: white;
 }
-/*# sourceMappingURL=Category.css.map */
