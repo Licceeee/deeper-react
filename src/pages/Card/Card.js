@@ -61,7 +61,9 @@ const Card = () => {
             </Link>
           </div>
 
-          <hr className="separator" />
+          <div className="col-12 separator-div">
+            <hr className="separator" />
+          </div>
 
           <div className="col-12 col-sm-6 col-md-3 next">
             <Button

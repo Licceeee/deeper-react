@@ -39,15 +39,23 @@
 @media screen and (max-width: 576px) {
   .next {
     order: 1;
-    margin-bottom: 3%;
+    margin: 2% 0;
+    width: 60vw;
+  }
+
+  .separator-div {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
   }
 
   .separator {
     display: block;
-    order: 2;
     width: 15vw;
   }
   .home {
     order: 3;
+    width: 60vw;
   }
 }
