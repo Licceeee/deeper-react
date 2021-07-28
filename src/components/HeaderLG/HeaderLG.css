@@ -1,12 +1,6 @@
 .shape {
-  background-image: radial-gradient(
-    300px 30vh at 50% -5vh,
-    var(--secondary) 75%,
-    transparent 75%
-  );
-
+  background-image: radial-gradient(300px 30vh at 50% -5vh, var(--secondary) 75%, transparent 75%);
   height: 20vh;
-
   top: 0;
   left: 0;
   right: 0;
@@ -14,13 +8,20 @@
   padding: 0;
   width: 100%;
   contain: content;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   z-index: 10;
-
   position: absolute;
 }
 
@@ -28,3 +29,4 @@
   margin-top: 3vh;
   color: var(--primary);
 }
+/*# sourceMappingURL=HeaderLG.css.map */

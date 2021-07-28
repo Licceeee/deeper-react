@@ -1,0 +1,18 @@
+@import "../../utils/global.css";
+
+.main-container {
+  padding-top: 20vh;
+  margin-left: 0;
+  margin-right: 0;
+  min-height: var(--page-height);
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+

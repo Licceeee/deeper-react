@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAP,iEAAO;AAEP,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,YAAY;CACtB",
+    "sources": [
+        "Spinner.scss"
+    ],
+    "names": [],
+    "file": "Spinner.css"
+}

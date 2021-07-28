@@ -2,15 +2,19 @@
 
 .App {
   color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh;
   background-color: var(--primary);
 }
 
 .border-primary {
   -webkit-box-shadow: inset 0px 0px 0px 3px var(--primary);
-  -moz-box-shadow: inset 0px 0px 0px 3px var(--primary);
   box-shadow: inset 0px 0px 0px 3px var(--primary);
   /* max-height: 99vh; */
 }
@@ -20,7 +24,6 @@
   margin-left: 0.5vw;
   margin-right: 0.5vw;
   -webkit-box-shadow: inset 0px 0px 0px 1px var(--white);
-  -moz-box-shadow: inset 0px 0px 0px 1px var(--white);
   box-shadow: inset 0px 1px 0px 1px var(--white);
   max-height: 100%;
 }
@@ -49,9 +52,8 @@
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     -webkit-box-shadow: inset 0px 0px 0px 1px var(--white);
-    -moz-box-shadow: inset 0px 0px 0px 1px var(--white);
     box-shadow: inset 0px 1px 0px 1px var(--white);
     max-height: 100%;
   }
-
 }
+/*# sourceMappingURL=App.css.map */
