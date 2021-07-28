@@ -54,18 +54,22 @@ const Card = () => {
           <p className="p-5 question">{question && question.content}</p>
         </div>
 
+
         <div className="row col-12 d-flex justify-content-center mt-2">
-          <div className="col-12 col-sm-6 col-md-3 home">
+
+
+        <div className="col-12 separator-div">
+            <hr className="separator" />
+          </div>
+
+          <div className="col-12 col-sm-3 home">
             <Link to="/categories">
               <Button text="Change category" cssClass="btn home-button" />
             </Link>
           </div>
 
-          <div className="col-12 separator-div">
-            <hr className="separator" />
-          </div>
 
-          <div className="col-12 col-sm-6 col-md-3 next">
+          <div className="col-12 col-sm-3 next">
             <Button
               text="Next"
               cssClass="btn next-button block"

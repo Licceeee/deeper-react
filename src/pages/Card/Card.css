@@ -32,11 +32,25 @@
   font-weight: bolder;
 }
 
-.separator {
-    display: none;
+.separator-div {
+  order: 1;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 576px) {
+.separator {
+  display: block;
+  width: 15vw;
+}
+
+.home {
+  order: 2;
+}
+
+.next {
+  order: 3;
+}
+@media screen and (max-width: 578px) {
   .next {
     order: 1;
     margin: 2% 0;
@@ -45,15 +59,9 @@
 
   .separator-div {
     order: 2;
-    display: flex;
-    justify-content: center;
     margin-bottom: 2%;
   }
 
-  .separator {
-    display: block;
-    width: 15vw;
-  }
   .home {
     order: 3;
     width: 60vw;
