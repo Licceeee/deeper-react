@@ -1,8 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./Contact.css";
+import HeaderSM from "../../components/HeaderSM/HeaderSM";
 
 const Contact = () => {
-  return <div></div>;
+  return (
+    <Fragment>
+      <HeaderSM />
+    </Fragment>
+  );
 };
 
 export default Contact;

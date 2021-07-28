@@ -5,6 +5,7 @@ import "./Card.css";
 import Button from "../../components/Button/Button";
 import { useQuery } from "@apollo/client";
 import { CATEGORY } from "../../utils/api";
+import HeaderSM from "../../components/HeaderSM/HeaderSM";
 
 const Card = () => {
   const { id } = useParams();
@@ -46,40 +47,39 @@ const Card = () => {
 
   if (data) {
     return (
-      <div className="custom-card">
-        <h2>{data.categoryById.name}</h2>
-        <i className="fas fa-heart card-icons"></i>
+      <Fragment>
+        <HeaderSM />
+        <div className="custom-card">
+          <h2>{data.categoryById.name}</h2>
+          <i className="fas fa-heart card-icons"></i>
 
-        <div className="card-border rounded d-flex flex-lg-column justify-content-center">
-          <p className="p-5 question">{question && question.content}</p>
+          <div className="card-border rounded d-flex flex-lg-column justify-content-center">
+            <p className="p-5 question">{question && question.content}</p>
+          </div>
+
+          <div className="row col-12 d-flex justify-content-center mt-2">
+            <div className="col-12 separator-div">
+              <hr className="separator" />
+            </div>
+
+            <div className="col-12 col-sm-3 home">
+              <Link to="/categories">
+                <Button text="Change category" cssClass="btn home-button" />
+              </Link>
+            </div>
+
+            <div className="col-12 col-sm-3 next">
+              <Button
+                text="Next"
+                cssClass="btn next-button block"
+                action={setNextQuestion}
+              />
+            </div>
+          </div>
+
+          <hr />
         </div>
-
-
-        <div className="row col-12 d-flex justify-content-center mt-2">
-
-
-        <div className="col-12 separator-div">
-            <hr className="separator" />
-          </div>
-
-          <div className="col-12 col-sm-3 home">
-            <Link to="/categories">
-              <Button text="Change category" cssClass="btn home-button" />
-            </Link>
-          </div>
-
-
-          <div className="col-12 col-sm-3 next">
-            <Button
-              text="Next"
-              cssClass="btn next-button block"
-              action={setNextQuestion}
-            />
-          </div>
-        </div>
-
-        <hr />
-      </div>
+      </Fragment>
     );
   }
 };
