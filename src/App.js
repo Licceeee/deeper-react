@@ -19,8 +19,6 @@ const App = () => {
         <div className="border-white">
           <Switch>
             <Route exact path="/">
-              <VerticalLine />
-              <HeaderLG />
               <Home />
             </Route>
 
