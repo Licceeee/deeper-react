@@ -8,9 +8,6 @@ import Categories from "./pages/Categories/Categories";
 import Contact from "./pages/Contact/Contact";
 import Card from "./pages/Card/Card";
 import Footer from "./components/Footer/Footer";
-import HeaderLG from "./components/HeaderLG/HeaderLG";
-
-import VerticalLine from "./components/VerticalLine/VerticalLine";
 
 const App = () => {
   return (
