@@ -16,9 +16,9 @@
 }
 
 .border-white {
-  margin-top: 0.5%;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  margin-top: 1vh;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
   -webkit-box-shadow: inset 0px 0px 0px 1px var(--white);
   -moz-box-shadow: inset 0px 0px 0px 1px var(--white);
   box-shadow: inset 0px 1px 0px 1px var(--white);
@@ -41,4 +41,17 @@
 
 .custom-link:hover {
   color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .border-white {
+    margin-top: 1.5vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    -webkit-box-shadow: inset 0px 0px 0px 1px var(--white);
+    -moz-box-shadow: inset 0px 0px 0px 1px var(--white);
+    box-shadow: inset 0px 1px 0px 1px var(--white);
+    max-height: 100%;
+  }
+
 }
