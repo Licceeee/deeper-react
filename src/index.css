@@ -74,10 +74,12 @@ p {
 
 a {
   color: var(--white);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--secondary);
+  text-decoration: underline;
   /* text-shadow: 0px 0px 0px var(--white)fff; */
 }
 
