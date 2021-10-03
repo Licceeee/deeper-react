@@ -84,3 +84,14 @@ a:hover {
 h6 {
   color: white;
 }
+
+.push-down {
+  min-height: var(--page-height);
+  line-height: var(--page-height);
+}
+
+.spinner-error-content {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
