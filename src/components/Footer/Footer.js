@@ -8,10 +8,10 @@ const Footer = () => {
       <div className="container flex col-12">
         <div className="section border-right col-12 col-md-4">
           <div className="inner-footer-container">
-            <Link to="/rules" className="custom-link">
+          {/* <Link to="/rules" className="custom-link">
               <p>Rules</p>
-            </Link>
-            <p>Download die App</p>
+            </Link> */}
+            <p>Download die App (Coming soon)</p>
           </div>
         </div>
 
