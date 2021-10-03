@@ -21,14 +21,13 @@ const Home = () => {
 
           <div
             className="row col-12 col-xl-6 inner-container p-0 m-0 d-flex flex-column 
-        align-content-center second"
+        align-content-center second flex"
           >
             <div className="text">
               <h2 className="pb-5"> Question game</h2>
               <p>
-                Play a question game to discover Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
+                Play a question game to connect with friends, family, your partner and so on.
+                Discover new topics and dive deeper into their characters.
               </p>
               <div className="svg-container pt-5">
                 <img

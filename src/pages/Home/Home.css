@@ -44,6 +44,9 @@
 .text {
   width: 50%;
   text-align: start;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .svg-container {
