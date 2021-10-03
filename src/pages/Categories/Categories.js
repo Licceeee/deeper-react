@@ -5,6 +5,7 @@ import HeaderLG from "../../components/HeaderLG/HeaderLG";
 import { useQuery } from "@apollo/client";
 import { CATEGORIES } from "../../utils/api";
 import Spinner from "../../components/Spinner/Spinner";
+import Error from "../../components/Error/Error";
 
 const Categories = () => {
   const { loading, error, data } = useQuery(CATEGORIES);
@@ -13,10 +14,8 @@ const Categories = () => {
     <Fragment>
       <HeaderLG />
       <div className="container page-size">
-        <div className="text-center push-down">
-          {loading && <Spinner />}
-          {error && <p>Error: {error.message}</p>}
-        </div>
+        {loading && <Spinner />}
+        {error && <Error message={error.message} />}
 
         <div className="row col-12 main-container">
           <div className="mb-5">
