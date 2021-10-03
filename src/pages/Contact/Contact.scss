@@ -1,0 +1,50 @@
+@import "../../utils/global.css";
+
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.contain .title {
+  padding-bottom: 3rem;
+}
+
+.contain h6 {
+    padding-bottom: 2rem;
+    color: var(--grey)
+}
+
+.contact-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  min-width: 60%;
+  padding-bottom: 3rem;
+}
+
+.contact-box {
+    border: 1px white solid;
+    padding: 6%;
+    border-radius: 2px;
+
+  }
+
+.contact {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+
+}
+
+.contact-boxes .icon {
+  padding-right: 2rem;
+}
