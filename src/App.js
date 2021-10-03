@@ -12,6 +12,9 @@ import About from "./pages/About/About";
 import Card from "./pages/Card/Card";
 import Footer from "./components/Footer/Footer";
 
+// ============================================================= >> ERROR PAGES
+import NotFound from "./pages/error/404";
+
 const App = () => {
   return (
     <div className="App">
@@ -22,29 +25,20 @@ const App = () => {
               <Home />
             </Route>
 
-            <Route exact path="/categories">
-              <Categories />
-            </Route>
+            <Route exact path="/categories" component={Categories} />
 
-            <Route exact path="/question/:id">
-              <Card />
-            </Route>
+            <Route exact path="/question/:id" component={Card} />
 
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
+            <Route exact path="/contact" component={Contact} />
 
-            <Route exact path="/about">
-              <About />
-            </Route>
+            <Route exact path="/about" component={About} />
 
-            <Route exact path="/rules">
-              <Rules />
-            </Route>
+            <Route exact path="/rules" component={Rules} />
+
+            <Route exact path="/impressum" component={Impressum} />
+
+            <Route component={NotFound} />
             
-            <Route exact path="/impressum">
-              <Impressum />
-            </Route>
           </Switch>
         </div>
       </div>
