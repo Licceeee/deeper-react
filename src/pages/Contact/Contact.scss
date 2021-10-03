@@ -23,20 +23,27 @@
 
 .contact-boxes {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
   min-width: 60%;
   padding-bottom: 3rem;
+  @media (max-width: 767px) {
+    max-width: 90%;
+  }
 }
 
 .contact-box {
     border: 1px white solid;
     padding: 6%;
     border-radius: 2px;
-
+    width: 40%;
+    @media (max-width: 781px) {
+      margin-bottom: 3%;
+      width: 100%;
+    }
   }
 
 .contact {
