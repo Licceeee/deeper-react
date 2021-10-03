@@ -8,19 +8,19 @@ const Footer = () => {
       <div className="container flex col-12">
         <div className="section border-right col-12 col-md-4">
           <div className="inner-footer-container">
-          {/* <Link to="/rules" className="custom-link">
+            {/* <Link to="/rules" >
               <p>Rules</p>
             </Link> */}
-            <p>Download die App (Coming soon)</p>
+            <p>Download die App (Coming soon...)</p>
+            <p>Rules (Coming soon...) </p>
+
           </div>
         </div>
 
         <div className="section border-right col-12 col-md-4">
           <div className="inner-footer-container">
-            <Link to="/about" className="custom-link">
-              <p>About Us</p>
-            </Link>
-            <Link to="/contact" className="custom-link">
+            <Link to="/about">About Us</Link>
+            <Link to="/contact">
               <p>Contact Us</p>
             </Link>
           </div>
@@ -31,7 +31,6 @@ const Footer = () => {
             <p>
               <a
                 href="https://www.linkedin.com/in/alicia-schonefeld/"
-                className="custom-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -41,7 +40,6 @@ const Footer = () => {
             <p>
               <a
                 href="https://github.com/Licceeee"
-                className="custom-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
