@@ -33,6 +33,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/alicia-schonefeld/"
                 className="custom-link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>
@@ -42,6 +43,7 @@ const Footer = () => {
                 href="https://github.com/Licceeee"
                 className="custom-link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 GitHub
               </a>
