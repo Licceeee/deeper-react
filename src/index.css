@@ -66,8 +66,7 @@ p {
   src: local("Sen Regular"), url(./assets/fonts/Sen/Sen-Regular.ttf) format("ttf");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-transform: uppercase;
-  margin: 0;
+  /* margin: 0; */
 }
 
 
@@ -96,4 +95,8 @@ h6 {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+}
+
+.text-left {
+  text-align: left;
 }
