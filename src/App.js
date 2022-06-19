@@ -11,6 +11,7 @@ import Impressum from "./pages/Impressum/Impressum";
 import About from "./pages/About/About";
 import Card from "./pages/Card/Card";
 import Footer from "./components/Footer/Footer";
+import Template from "./pages/Template/Template";
 
 // ============================================================= >> ERROR PAGES
 import NotFound from "./pages/error/404";
@@ -36,6 +37,8 @@ const App = () => {
             <Route exact path="/rules" component={Rules} />
 
             <Route exact path="/impressum" component={Impressum} />
+
+            <Route exact path="/template" component={Template} />
 
             <Route component={NotFound} />
             
