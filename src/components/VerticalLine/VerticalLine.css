@@ -1,6 +1,6 @@
 .vertical-line {
   width: 0%;
-  height: 67%;
+  height: var(--vertical-line-height);
   top: 0;
   background: white;
   position: absolute;
@@ -19,7 +19,7 @@
   /* left: -o-calc(50% - (var(--circle-size) / 2)); */
   /* Standard */
   left: calc(50% - (var(--circle-size) / 2));
-  top: 60%;
+  top: calc(var(--vertical-line-height) - 7%);
   height: var(--circle-size);
   width: var(--circle-size);
   background-color: var(--white);
@@ -41,11 +41,11 @@
 }
 
 .triangle-top {
-  top: 65%;
+  top: calc(var(--vertical-line-height) - 2%);
 }
 
 .triangle-bottom {
-  top: 66.5%;
+  top: calc(var(--vertical-line-height) - 0.5%);
 }
 
 @media screen and (max-width: 768px) {
