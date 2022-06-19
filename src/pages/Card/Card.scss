@@ -23,13 +23,15 @@
 }
 
 .card-icons {
-  padding: 30px;
+  padding: 3rem;
   transform: scale(1.5);
   color: var(--secondary);
 }
 
 .question {
   font-weight: bolder;
+  margin: 0;
+  padding: 4rem;
 }
 
 .separator-div {
@@ -50,6 +52,18 @@
 .next {
   order: 3;
 }
+
+.card-content {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+
 @media screen and (max-width: 578px) {
   .next {
     order: 1;
@@ -67,3 +81,4 @@
     width: 60vw;
   }
 }
+

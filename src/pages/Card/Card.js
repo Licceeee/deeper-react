@@ -53,14 +53,11 @@ const Card = () => {
           <h2>{data.categoryById.name}</h2>
           <i className="fas fa-heart card-icons"></i>
 
-          <div className="card-border rounded d-flex flex-lg-column justify-content-center">
-            <p className="p-5 question">{question && question.content}</p>
+          <div className="card-border rounded card-content">
+            <p className="question">{question && question.content}</p>
           </div>
 
-          <div className="row col-12 d-flex justify-content-center mt-2">
-            <div className="col-12 separator-div">
-              <hr className="separator" />
-            </div>
+          <div className="row col-12 d-flex justify-content-center mt-2 pt-5">
 
             <div className="col-12 col-sm-3 home">
               <Link to="/categories">
