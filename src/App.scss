@@ -1,4 +1,5 @@
-@import url(/home/lice/projects/deeper/deeper-react/src/utils/global.css);
+@import "./utils/global.css";
+
 .App {
   color: var(--white);
   display: -webkit-box;
@@ -6,8 +7,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh;
   background-color: var(--primary);
 }
@@ -55,7 +56,9 @@
     max-height: 100%;
   }
 }
+/*# sourceMappingURL=App.css.map */
+
+
 .page-size {
   min-height: var(--page-height);
 }
-/*# sourceMappingURL=App.css.map */
