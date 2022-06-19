@@ -50,7 +50,7 @@ const Home = () => {
             <Link to="/categories">
               <Button
                 text="Select a category"
-                cssClass="btn next-button my-1"
+                cssClass="btn home-button my-1"
               />
             </Link>
           </div>
