@@ -10,12 +10,7 @@ footer {
   margin-top: auto;
 }
 
-p {
-  text-transform: capitalize;
-  font-family: 'Sen', sans-serif;
-}
-
-.flex {
+.footer-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +50,16 @@ p {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.inner-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {

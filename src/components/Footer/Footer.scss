@@ -5,15 +5,11 @@ footer {
   padding-bottom: 5vh;
   display: flex;
   min-height: var(--footer-height);
-  margin-top:auto; 
+  margin-top: auto;
 }
 
-p {
-  text-transform: capitalize;
-  font-family: 'Sen', sans-serif;
-}
 
-.flex {
+.footer-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -35,17 +31,24 @@ p {
   align-content: center;
 }
 
+.inner-footer-container {
+  display: flex;
+	flex-direction: column;
+}
+
 
 @media screen and (max-width: 768px) {
   .border-right {
     -webkit-box-shadow: 0px 0px 0px 0px #ffffff;
     box-shadow: 0px 0px 0px 0px #ffffff;
   }
+
   .inner-footer-container {
     width: 100%;
     padding: 5%;
   }
+
   .container {
-      padding-bottom: 5%;
+    padding-bottom: 5%;
   }
 }
