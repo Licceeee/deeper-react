@@ -30,21 +30,44 @@
   max-width: 50%;
 }
 
-.text {
+.right-hero-side {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.game-description-container {
+  // height: 100%;
   width: 50%;
-  text-align: start;
-  display: inline-block;
-  vertical-align: middle;
+
+  // display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
 }
 
 .svg-container {
   display: none;
 }
 
+.game-description {
+  font-size: 1.2rem;
+  color: rgb(201, 200, 200);
+}
+
+
 @media screen and (max-width: 768px) {
+  .game-description-container {
+    width: 80%;
+  }
   .inner-container {
     max-width: 100%;
   }
+
   .first {
     order: 2;
   }
@@ -66,16 +89,19 @@
   .second {
     order: 1;
   }
+
   .section-choose-way-to-play {
     order: 3;
     padding: 0;
     padding-bottom: 8%;
 
   }
+
   .arrow {
     height: 14vh;
     width: 14vw;
   }
+
   .circle-line {
     height: 10vh;
     width: 10vw;

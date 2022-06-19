@@ -20,14 +20,17 @@ const Home = () => {
           </div>
 
           <div
-            className="row col-12 col-xl-6 inner-container p-0 m-0 d-flex flex-column 
-        align-content-center second flex"
+            className="row col-12 col-xl-6 inner-container right-hero-side second"
           >
-            <div className="text">
+          {/* <div className="row col-12 col-xl-6 right-hero-side"> */}
+            <div className="game-description-container text-left">
               <h2 className="pb-5"> Question game</h2>
-              <p>
-                Play a question game to connect with friends, family, your partner and so on.
-                Discover new topics and dive deeper into their characters.
+              <p class="game-description">
+                Play a question game to connect with friends, family, your
+                partner and so on. 
+                </p>
+                <p class="game-description">                Discover new topics and dive deeper into
+                each others characters.
               </p>
               <div className="svg-container pt-5">
                 <img
@@ -47,7 +50,7 @@ const Home = () => {
             <Link to="/categories">
               <Button
                 text="Select a category"
-                cssClass="btn light-button my-5"
+                cssClass="btn next-button my-1"
               />
             </Link>
           </div>
