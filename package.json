@@ -5,6 +5,7 @@
     "dependencies": {
         "@apollo/client": "^3.3.13",
         "@apollo/react-hooks": "^4.0.0",
+        "caniuse-lite": "^1.0.30001361",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-router-dom": "^5.2.0",
