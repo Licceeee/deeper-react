@@ -40,19 +40,19 @@ self.__precacheManifest = [
     "url": "/static/media/fil.37a6add2.jpeg"
   },
   {
-    "revision": "091c85b40d6a9dfd305ab6c85a566831",
-    "url": "/static/media/Sen-ExtraBold.091c85b4.ttf"
-  },
-  {
     "revision": "f7e19def91dc7d0a145dcf8fcec4cc8a",
     "url": "/static/media/Sen-Bold.f7e19def.ttf"
+  },
+  {
+    "revision": "091c85b40d6a9dfd305ab6c85a566831",
+    "url": "/static/media/Sen-ExtraBold.091c85b4.ttf"
   },
   {
     "revision": "c92d05ebbdb4c63d69dc1c119a69e0ee",
     "url": "/static/media/Sen-Regular.c92d05eb.ttf"
   },
   {
-    "revision": "e1619da5fde46c5949443ee08a3b94fe",
+    "revision": "b5edb6e16c8773960c1033e852bb6777",
     "url": "/index.html"
   }
 ];
